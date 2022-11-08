@@ -10,7 +10,7 @@
 /* ************************************************************ */
 /* Header Section */
 .headerContainer{
-    background-image: url('./images/hero-bg.jpg');
+    background-image: url('../images/hero-bg.jpg');
     min-height: 100vh;
     /* background-position: center; */
     background-size: 100% 100%;
