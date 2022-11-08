@@ -1,0 +1,392 @@
+:root{
+    --primaryColor : hsl(212, 100%, 50%);
+    --servicesHoverColor : rgba(168, 168, 168,0.5);
+    --footerBgColor : hsl(212, 100%, 41%);
+    --BgColor1 : hsl(0, 0%, 100%) ;
+    --BgColor2 : hsl(0, 0%, 96%) ;
+    /* --hoverColor:#dc2727;
+    --footerColor:#333333;
+    --backgroundColor:#F1F1F1; */
+}
+
+
+/* ************************************************************ */
+/* Header Section */
+.headerContainer{
+    background-image: url('/images/hero-bg.jpg');
+    min-height: 100vh;
+    /* background-position: center; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.headerLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0 , 0.6);
+}
+.headerContainer h1{
+    z-index: 50;
+}
+
+
+.navbar-toggler{
+    background-color: var(--BgColor1);
+    color: black;
+}
+.navbar a{
+    color: var(--BgColor1);
+}
+
+.navbar-brand{
+    font-size: xx-large;
+}
+
+/* ************************************************************ */
+/* About Section */
+.aboutSection{
+    background-color: var(--BgColor2);
+}
+.aboutContainer{
+    background-color: var(--BgColor1);
+    /* width: 90%;
+    margin: auto; */
+}
+
+
+
+
+
+
+
+
+/* ************************************************************ */
+/* Services Section */
+.servicesSection{
+    background-color: var(--BgColor2);
+}
+.serviceIcon i{
+    border: 8px solid var(--primaryColor);
+    border-radius: 50%;
+
+}
+.serviceIcon i:hover{
+    background-color: var(--primaryColor);
+    border: 8px solid var(--servicesHoverColor);
+    transition: .3s all ease-in;
+}
+.servicesSubtitle{
+    position: relative;
+}
+.servicesSubtitleUnderline::before{
+    content: " ";
+    background-color: var(--primaryColor);
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.servicesSubtitle h2{
+    font-size: xx-large;
+}
+
+.servicesItem{
+    border-radius: 5%;
+    background-color: var(--BgColor1);
+}
+
+
+
+
+/* ************************************************************ */
+/* Statistics Section */
+.statisticsSection{
+    background-image: url('../images/counters-bg.jpg');
+    /* min-height: 60vh; */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+/* .statisticsSection{
+    position: relative;
+} */
+.statisticsSectionLayer{
+    background-color:rgba(0, 119, 255,0.5) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+.statsContainer{
+    position: relative;
+    z-index: 50;
+}
+.statsItem i{
+    /* background-color: black; */
+    border: 3px solid rgb(205, 225, 248);
+    border-radius: 50%;
+}
+
+
+/* ************************************************************ */
+/* Slider Section */
+.sliderSection{
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.sliderSectionLayer{
+    background-color:rgba(0, 119, 255,0.5) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+}
+
+.sliderContainer{
+    position: relative;
+    z-index: 50;
+}
+
+.carouselImg img{
+    width: 15%;
+    border-radius: 50%;
+}
+
+
+.carousel-indicators button{
+    width: 10px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    /* background-color: var(--footerBgColor) !important; */
+}
+.carousel-indicators .active{
+    /* background-color: var(--primaryColor); */
+}
+
+/* ************************************************************ */
+/* Portfolio Section */
+.portfolioSection{
+    background-color: var(--BgColor2);
+}
+.portfolioSubtitle{
+    position: relative;
+}
+.portfolioSubtitleUnderline::before{
+    content: " ";
+    background-color: var(--primaryColor);
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portfolioSubtitle h2{
+    font-size: xx-large;
+}
+.card-body{
+    font-size: x-small;
+}
+
+.cardBtn .btn{
+    border: 2px solid var(--primaryColor);
+    border-radius: 50%;
+    color: var(--primaryColor);
+}
+.cardBtn .btn:hover{
+    background-color: var(--primaryColor);
+    color: var(--BgColor1);
+    border-color: var(--BgColor2);
+}
+
+
+
+/* ************************************************************ */
+/* Blog Section */
+.blogSection{
+    background-color: var(--BgColor2);
+}
+.card-body{
+    position: relative;
+}
+.cardTitle{
+    background-color: var(--primaryColor);
+    
+}
+.card-body h6{
+    /* height: 100%; */
+    background-color: var(--primaryColor);
+    position: absolute;
+    bottom: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: x-small;
+}
+
+.blogSubtitle{
+    position: relative;
+}
+.blogSubtitleUnderline::before{
+    content: " ";
+    background-color: var(--primaryColor);
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blogSubtitle h2{
+    font-size: xx-large;
+}
+
+
+.listGroupContent a{
+    list-style: none;
+    text-decoration: none;
+}
+.listGroupContent img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+
+
+/* ************************************************************ */
+/* Contact Us Section */
+.contactusSection{
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.contactusSectionLayer{
+    background-color:rgba(0, 119, 255,0.5) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+.contactusContainer{
+    background-color: var(--BgColor1);
+    position: relative;
+    z-index: 50;
+}
+
+.sendMessageSubtitle{
+    position: relative;
+}
+.sendMessageSubtitleUnderline::before{
+    content: " ";
+    background-color: var(--primaryColor);
+    height: 4px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.sendMessageSubtitle h2{
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+
+
+.gitInTouchSubtitle{
+    position: relative;
+}
+.gitInTouchSubtitleUnderline::before{
+    content: " ";
+    background-color: var(--primaryColor);
+    height: 4px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.gitInTouchSubtitle h2{
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+
+
+.getInTouchIcons i{
+    color: var(--primaryColor);
+}
+
+.contactusSocial i{
+    border: 3px solid var(--primaryColor);
+    border-radius: 50%;
+}
+.contactusSocial i:hover{
+    background-color: var(--primaryColor);
+    transition: .3s all ease-in;
+    color: var(--BgColor1);
+}
+
+
+
+
+/* ************************************************************ */
+/* Footer Section */
+footer{
+    background-color: var(--footerBgColor);
+}
+
+
+
+
+/* ************************************************************ */
+/* Top Button */
+.topBtn{
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+}
+.topBtn i{
+    color: var(--BgColor1);
+}
+
+
+
+@media screen and (min-width:450px) and (max-width:500px) {
+    .carouselImg img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px){
+    .carouselImg img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px){
+    .carouselImg img{
+        width: 40%;
+    }
+}
