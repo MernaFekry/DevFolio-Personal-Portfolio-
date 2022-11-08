@@ -4,9 +4,6 @@
     --footerBgColor : hsl(212, 100%, 41%);
     --BgColor1 : hsl(0, 0%, 100%) ;
     --BgColor2 : hsl(0, 0%, 96%) ;
-    /* --hoverColor:#dc2727;
-    --footerColor:#333333;
-    --backgroundColor:#F1F1F1; */
 }
 
 
@@ -45,6 +42,9 @@
     font-size: xx-large;
 }
 
+
+
+
 /* ************************************************************ */
 /* About Section */
 .aboutSection{
@@ -52,13 +52,7 @@
 }
 .aboutContainer{
     background-color: var(--BgColor1);
-    /* width: 90%;
-    margin: auto; */
 }
-
-
-
-
 
 
 
@@ -107,16 +101,13 @@
 /* Statistics Section */
 .statisticsSection{
     background-image: url('../images/counters-bg.jpg');
-    /* min-height: 60vh; */
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
 }
-/* .statisticsSection{
-    position: relative;
-} */
+
 .statisticsSectionLayer{
     background-color:rgba(0, 119, 255,0.5) ;
     position: absolute;
@@ -131,53 +122,10 @@
     z-index: 50;
 }
 .statsItem i{
-    /* background-color: black; */
     border: 3px solid rgb(205, 225, 248);
     border-radius: 50%;
 }
 
-
-/* ************************************************************ */
-/* Slider Section */
-.sliderSection{
-    background-image: url('../images/overlay-bg.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-.sliderSectionLayer{
-    background-color:rgba(0, 119, 255,0.5) ;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 5;
-
-}
-
-.sliderContainer{
-    position: relative;
-    z-index: 50;
-}
-
-.carouselImg img{
-    width: 15%;
-    border-radius: 50%;
-}
-
-
-.carousel-indicators button{
-    width: 10px !important;
-    height: 8px !important;
-    border-radius: 50%;
-    /* background-color: var(--footerBgColor) !important; */
-}
-.carousel-indicators .active{
-    /* background-color: var(--primaryColor); */
-}
 
 /* ************************************************************ */
 /* Portfolio Section */
@@ -218,6 +166,48 @@
 
 
 /* ************************************************************ */
+/* Slider Section */
+.sliderSection{
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.sliderSectionLayer{
+    background-color:rgba(0, 119, 255,0.5) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+}
+
+.sliderContainer{
+    position: relative;
+    z-index: 50;
+}
+
+.carouselImg img{
+    width: 15%;
+    border-radius: 50%;
+}
+
+
+.carousel-indicators button{
+    width: 10px !important;
+    height: 8px !important;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* ************************************************************ */
 /* Blog Section */
 .blogSection{
     background-color: var(--BgColor2);
@@ -230,7 +220,6 @@
     
 }
 .card-body h6{
-    /* height: 100%; */
     background-color: var(--primaryColor);
     position: absolute;
     bottom: 88%;
